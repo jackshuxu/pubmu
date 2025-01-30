@@ -24,7 +24,7 @@ function SignIn() {
           fontFamily: "roboto",
         }}
       >
-        <h1 style={{ color: "black" }}>Welcome to MITI!</h1>
+        <h1 style={{ color: "black" }}>Welcome to PUBMU!</h1>
         <i style={{ color: "black" }}>
           A new generation of music software awaits.
         </i>

@@ -172,7 +172,7 @@ export default function Footer({
             value={tempo}
             disabled={playback}
             onChange={(e) => setTempo(e.target.value)}
-            className="w-32 h-2 bg-gray-600 rounded-full appearance-none"
+            className="w-32 h-2 bg-gray-600 appearance-none" //rounded-full
             style={{
               background: `linear-gradient(to right, #60A5FA 0%, #60A5FA ${
                 (tempo - 60) / 1.2

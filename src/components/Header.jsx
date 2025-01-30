@@ -62,7 +62,7 @@ const Header = () => {
 
       {/* Title */}
       <div className="font-bold text-white text-xl tracking-wider text-center flex-1">
-        M I T I
+        P U B M U
       </div>
 
       {/* Right controls */}

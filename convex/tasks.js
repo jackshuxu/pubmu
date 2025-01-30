@@ -7,7 +7,16 @@ export const getMIDIID = query({
     const res = await ctx.db
       .query("files")
       .filter((q) => q.eq(q.field("name"), args.file))
-      .take(1);
+      .first();
+
+    if (!res || res.length === 0) {
+      const newId = await ctx.db.insert("files", {
+        name: args.file,
+        midi: [],
+        cursors: {},
+      });
+      return newId;
+    }
     return res[0]._id;
   },
 });
